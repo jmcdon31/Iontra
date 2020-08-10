@@ -64,9 +64,13 @@ int main()
 	if (led_return != LED_RETURN_SUCCESS )
 		return-1;
 
-	Led_Red(front_led);
-	Led_Green(front_led);
-//	printf("front led color %d\n",front_led->red.intensity);
+	/* Test Cases */
+	//Init 6 instances and make sure the 6th fails
+	//Deinit an instance and make sure a new one can be created
+	//Test all colors - also tests brightness
+	//Make sure LED turns off
+	//Test deinit
+	//
 	return 0;
 }
 
